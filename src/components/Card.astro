@@ -1,0 +1,14 @@
+---
+const {header, text} = Astro.props;
+---
+<article>
+        <h2>{header}</h2>
+        <slot />
+        <p>{text}</p>
+</article>
+
+<style>
+    article{
+        width: 355px;
+    }
+</style>

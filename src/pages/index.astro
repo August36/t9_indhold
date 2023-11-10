@@ -1,6 +1,8 @@
 ---
 import "../styles/style.css"
-import Nav from "../components/Nav.astro";
+import Nav from "../components/Nav.astro"
+import Video from "../components/Video.astro"
+import Card from "../components/Card.astro"
 ---
 
 <html lang="en">
@@ -15,7 +17,20 @@ import Nav from "../components/Nav.astro";
 		<header>
 			<Nav/>
 		</header>
-		<h1>Astro</h1>
+		<main>
+			<Video/>
+			<div class="title_container">
+				<h1>Første skridt mod din fremtid, <br> starter med ca A kasse</h1>
+			</div>
+			<section class="cards_container">
+				<Card header="5 tips til en god studiestart" text="lorem ipsum lorem iobujns lorem ipsum lorem iobujns lorem ipsum lorem iobujns lorem ipsum lorem iobujns lorem ipsum lorem iobujns">
+					<img src="5_tips_img.png" alt="">
+				</Card>
+				<Card header="Hvorfor er en A kasse vigtig?" text="lorem ipsum lorem iobujns lorem ipsum lorem iobujns lorem ipsum lorem iobujns lorem ipsum lorem iobujns lorem ipsum lorem iobujns">
+					<img src="5_tips_img.png" alt="">
+					<Card/>
+			</section>
+		</main>
 		<footer></footer>
 	</body>
 </html>
