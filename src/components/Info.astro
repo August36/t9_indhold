@@ -1,18 +1,19 @@
 ---
 import "../styles/style.css"
+const {title, li1, li2, li3, li4, li5} = Astro.props;
 ---
 <article>
-<div class="div1">
-    <h3>Her er 5 fordele lorem upsudm sdkfsd fsdf sdfsdf</h3>
+<div class="list_container">
+    <h3>{title}</h3>
     <ul>
-        <li>bla bla</li>
-        <li>bla bla</li>
-        <li>bla bla</li>
-        <li>bla bla</li>
-        <li>bla bla</li>
+        <li>{li1}</li>
+        <li>{li2}</li>
+        <li>{li3}</li>
+        <li>{li4}</li>
+        <li>{li5}</li>
     </ul>
 </div>
-<div class="div2">
+<div class="cta_container">
     <h2>Meld dig til <br> <span>her</span></h2>
 </div>
 </article>
@@ -28,15 +29,15 @@ article {
 }
 
 span {
-    font-weight: bold; /* Bold text */
+    font-weight: bold;
 }
 
-.div1 {
+.list_container {
     width: 200px;
 }
 
-.div2 {
-    margin-top: 40px;
+.cta_container {
+    margin-top: 30px;
     width: 200px;
     text-align: center;
     display: flex;
@@ -51,10 +52,14 @@ ul {
 }
 
 @media only screen and (min-width: 600px) {
-
+    article{
+        width: 500px;
+    }
 }
 
 @media only screen and (min-width: 1166px) {
-
+    article{
+        width: 700px;
+    }
 }
 </style>
