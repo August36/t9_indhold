@@ -1,16 +1,35 @@
 ---
-const {header, text} = Astro.props;
+const {header, text, btn} = Astro.props;
 ---
 <article>
         <h2>{header}</h2>
         <slot />
         <p>{text}</p>
+        <button>{btn}</button>
 </article>
 
 <style>
 
     article{
         width: 355px;
+    }
+
+    h2{
+        margin-bottom: 20px;
+    }
+
+    p{
+        line-height: 1.5;
+        margin:20px 0;
+        color: rgb(37, 37, 37);
+    }
+
+    button{
+        padding: 20px;
+        background-color: #054674;
+        color: white;
+        border: none;
+        border-radius: 8px;
     }
 
     @media only screen and (min-width: 600px) {
