@@ -18,6 +18,11 @@
     margin-top: 28px;
 }
 
+.info_container{
+    display: flex;
+    justify-content: center;
+}
+
 img{
     width: 355px;
 }
