@@ -33,11 +33,11 @@ img{
     }
 
     img{
-        width: 320px;
+        width: 275px;
     }
 
     iframe{
-        width: 699px;
+        width: 400px;
         height: 400px;
     }
 }
@@ -48,11 +48,16 @@ img{
         justify-content: center;
         flex-direction: row;
         align-items: center;
-        gap: 200px;
+        gap: 166px;
         margin-top: 28px;
     }
 
     img{
         width: 500px;
+    }
+
+    iframe{
+        width: 600px;
+        height: 400px;
     }
 }

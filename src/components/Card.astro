@@ -8,7 +8,20 @@ const {header, text} = Astro.props;
 </article>
 
 <style>
+
     article{
         width: 355px;
     }
+
+    @media only screen and (min-width: 600px) {
+    article{
+        width: 275px;
+    }
+}
+
+@media only screen and (min-width: 1166px) {
+        article{
+        width: 500px;
+    }
+}
 </style>
