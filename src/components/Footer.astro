@@ -1,0 +1,85 @@
+---
+import "../styles/style.css"
+---
+<div class="footer">
+    <img class="ca_studiepartner" src="CA_Studiepartner_horisontal_rgb_hvid.svg" alt="">
+    <img class="trustpilot_img" src="trustpilot_ca.png" alt="">
+    <img class="phone_info_img" src="telefon_info_img.png" alt="">
+    <img class="facebook_logo_img" src="facebook_logo.png" alt="">
+    <img class="instagram_logo_img" src="instagram_logo.svg" alt="">
+</div>
+
+<style>
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(0, 149, 215);
+    }
+
+    .ca_studiepartner {
+        width: 200px;
+        height: auto;
+    }
+
+    .trustpilot_img, .phone_info_img {
+        width: 200px;
+        height: 65px;
+    }
+
+    .facebook_logo_img, .instagram_logo_img {
+        width: 75px;
+        height: 75px;
+        cursor: pointer;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .ca_studiepartner {
+            width: 150px;
+        }
+        .trustpilot_img {
+            display: none;
+        }
+        .phone_info_img {
+            width: 100px;
+        }
+        .facebook_logo_img, .instagram_logo_img {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 1165px) {
+        .ca_studiepartner {
+            width: 180px;
+        }
+        .trustpilot_img {
+            display: block;
+            width: 150px;
+        }
+        .phone_info_img {
+            width: 150px;
+        }
+        .facebook_logo_img, .instagram_logo_img {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 1166px) {
+        .ca_studiepartner {
+            width: 200px;
+        }
+        .trustpilot_img {
+            display: block;
+            width: 200px;
+        }
+        .phone_info_img {
+            width: 200px;
+        }
+        .facebook_logo_img, .instagram_logo_img {
+            display: block;
+        }
+    }
+</style>
