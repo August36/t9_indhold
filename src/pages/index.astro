@@ -7,48 +7,31 @@ import Info from "../components/Info.astro"
 import Info2 from "../components/Info2.astro"
 import Carousel from "../components/Carousel.astro"
 import Footer from "../components/Footer.astro"
+import Mainlayout from "../layouts/Mainlayout.astro"
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<header>
-			<Nav/>
-		</header>
-		<main>
-			<Video/>
-			<div class="title_container">
-				<h1>Første skridt mod din fremtid, <br> starter med ca A kasse</h1>
-			</div>
-			<section class="cards_container">
-				<Card header="5 tips til en god studiestart" text="Dette foredrag deler fem afgørende tips til en vellykket studiestart – fra organisering og tidsstyring til opbygning af sociale netværk. Lad os udforske nøglerne til at skabe en positiv, effektiv og bæredygtig begyndelse på jeres studierejse!" btn="Læs mere &#8594;">
-					<img src="5_tips_img.png" alt="">
-				</Card>
-				<Card header="Hvorfor er en A kasse vigtig?" text="Vi dykker ned i vigtigheden af at tilmelde sig en A-kasse og hvordan det kan sikre økonomisk tryghed og støtte under forskellige karrierescenarier. Lad os udforske, hvordan denne enkle beslutning kan være afgørende for din professionelle fremtid." btn="Læs mere &#8594;">
-					<img src="a_kasse_vigtig_img.png" alt="">
-				</Card>
-			</section>
-			<section class="info_container">
-				<Info title="Her er 5 gode fordele ved at blive medlem af CA:" li1="Gratis A-kasse" li2="Workshops" li3="Juridisk hjælp" li4="Hjælp til at skrive CV" li5="Rabatter"> 
-				</Info>
-			</section>
-			<section class="info_container2">
-				<Info2 insta_link="@caakasse" cta_text="Vi er en gratis studiepartner og a-kasse for business-studerende. Følg med og tag dit studie til next level 🚀#studiepartner #yourcareerourbusiness">
-					<img style="width: 150px;" class="ca_logo" src="ca_logo.png" alt=""> 
-				</Info2>
-			</section>
-			<section class="carousel_container">
-				<Carousel/>
-			</section>
-		</main>
-		<footer>
-			<Footer/>
-		</footer>
-	</body>
-</html>
+<Mainlayout>
+		<Video/>
+		<div class="title_container">
+			<h1>Første skridt mod din fremtid, <br> starter med ca A kasse</h1>
+		</div>
+	<section class="cards_container">
+		<Card header="5 tips til en god studiestart" text="Dette foredrag deler fem afgørende tips til en vellykket studiestart – fra organisering og tidsstyring til opbygning af sociale netværk. Lad os udforske nøglerne til at skabe en positiv, effektiv og bæredygtig begyndelse på jeres studierejse!" btn="Læs mere &#8594;">
+				<img src="5_tips_img.png" alt="">
+		</Card>
+		<Card header="Hvorfor er en A kasse vigtig?" text="Vi dykker ned i vigtigheden af at tilmelde sig en A-kasse og hvordan det kan sikre økonomisk tryghed og støtte under forskellige karrierescenarier. Lad os udforske, hvordan denne enkle beslutning kan være afgørende for din professionelle fremtid." btn="Læs mere &#8594;">
+				<img src="a_kasse_vigtig_img.png" alt="">
+		</Card>
+	</section>
+	<section class="info_container">
+		<Info title="Her er 5 gode fordele ved at blive medlem af CA:" li1="Gratis A-kasse" li2="Workshops" li3="Juridisk hjælp" li4="Hjælp til at skrive CV" li5="Rabatter"> 
+		</Info>
+	</section>
+	<section class="info_container2">
+		<Info2 insta_link="@caakasse" cta_text="Vi er en gratis studiepartner og a-kasse for business-studerende. Følg med og tag dit studie til next level 🚀#studiepartner #yourcareerourbusiness">
+			<img style="width: 150px;" class="ca_logo" src="ca_logo.png" alt=""> 
+		</Info2>
+	</section>
+	<section class="carousel_container">
+		<Carousel/>
+	</section>
+</Mainlayout>

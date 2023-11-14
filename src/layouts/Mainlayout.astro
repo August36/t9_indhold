@@ -1,0 +1,31 @@
+---
+import "../styles/style.css"
+import Nav from "../components/Nav.astro"
+import Video from "../components/Video.astro"
+import Card from "../components/Card.astro"
+import Info from "../components/Info.astro"
+import Info2 from "../components/Info2.astro"
+import Carousel from "../components/Carousel.astro"
+import Footer from "../components/Footer.astro"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>CA Kampagne</title>
+	</head>
+	<body>
+		<header>
+			<Nav/>
+		</header>
+        <main>
+            <slot />
+        </main>
+        <footer>
+			<Footer/>
+		</footer>
+	</body>
+</html>
