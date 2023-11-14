@@ -19,9 +19,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #e6e6de;
+}
+
 p {
   font-family: "Nexa";
   color: rgb(37, 37, 37);
+}
+
+a {
+  font-family: "Nexa";
 }
 
 h1 {
@@ -110,7 +118,7 @@ img {
   }
 
   img {
-    width: 500px;
+    width: 475px;
   }
 
   iframe {
